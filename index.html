@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Adivinhe o erro</title>
+</head>
+<body>
+    
+    <div class="interface">
+        <h1>Adivinhe um número</h1>
+        <p class="info">Selecionamos um número aleatório entre 1 e 10. Veja se consegue adivinhar em 5 chances ou menos. Lhe diremos se seu palpite está com valor alto ou baixo</p>
+
+        <div class="localGame">
+            <p>Digite seu palpite:</p>
+            <input type="number" class="userNumber" min="0" max="10"> 
+            <button id="btn">Enviar palpite</button>
+        </div>
+
+        <div class="localMsg">
+            <p id="msgPalpiteAnterior"></p>
+            <p class="msgFinal"></p>
+            <p id="msgLowHigh"></p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
