@@ -13,7 +13,7 @@ let contador = 0;
 btn.addEventListener("click", function adivinharNumero(){
         let userNumber = Number(document.querySelector(".userNumber").value);
         let inputUserNumber = document.querySelector(".userNumber");
-        
+
         function highLow(){
                 if(userNumber < randomNumber){
                         msgLowHigh.textContent = "Seu palpite está muito baixo"
@@ -58,7 +58,7 @@ btn.addEventListener("click", function adivinharNumero(){
                 msgLowHigh.textContent = ''
 
                 resetGame()
-               
+        
         }else if(contador === 0){
                 palpiteAnterior.textContent += 'palpite anterior:' + ' ' + userNumber + ' ';
                 contador++;
@@ -74,7 +74,7 @@ btn.addEventListener("click", function adivinharNumero(){
                 contador++;
                 
                 highLow()
-                
+
         }
 
         if(contador == 5){
